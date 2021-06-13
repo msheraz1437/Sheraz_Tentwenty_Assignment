@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/card_margin"
+    android:layout_marginLeft="@dimen/card_margin"
+    android:layout_marginTop="@dimen/normal_padding"
+    android:layout_marginEnd="@dimen/card_margin"
+    android:layout_marginRight="@dimen/card_margin"
+    android:layout_marginBottom="@dimen/card_elevation"
+    app:cardElevation="@dimen/card_elevation">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drawable_list_item">
+        <ImageView
+            android:id="@+id/ivMoviesImage"
+            android:layout_width="@dimen/text_margin_80"
+            android:layout_height="@dimen/text_margin_120"
+            android:contentDescription="@string/movie_image"
+            android:scaleType="fitCenter"
+            tools:src="@drawable/dummy"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            /><!--@dimen/image_size-->
+        <!-- News block -->
+
+        <LinearLayout
+            android:id="@+id/relativeItemImage"
+            android:layout_width="match_parent"
+            android:layout_height="180sp"
+            android:layout_toRightOf="@+id/ivMoviesImage"
+            android:layout_toLeftOf="@+id/bookMovieButtonView"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            >
+
+
+
+            <TextView
+                android:id="@+id/tvMovieName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_transparent"
+                android:maxLines="1"
+                android:padding="@dimen/card_elevation"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                tools:text="ABC News"
+                android:layout_marginStart="@dimen/normal_padding"
+                android:layout_marginEnd="@dimen/normal_padding"
+                />
+
+
+        <!-- News Title -->
+        <TextView
+            android:id="@+id/tvMovieReleaseDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:padding="@dimen/card_elevation"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/textview_size_normal"
+            tools:text="Elon Musk says Tesla can't yet launch in India"
+            android:layout_marginStart="@dimen/normal_padding"
+            android:layout_marginEnd="@dimen/normal_padding"
+            />
+
+        <!-- Date - Time -->
+        <TextView
+            android:id="@+id/tvMovieAdult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:textAllCaps="true"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/textview_size_small"
+            tools:text="@string/str_test_date"
+            android:padding="@dimen/card_elevation"
+            android:layout_marginStart="@dimen/normal_padding"
+            android:layout_marginEnd="@dimen/normal_padding"
+            />
+        </LinearLayout>
+        <Button
+            android:id="@+id/bookMovieButtonView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/book"
+            android:layout_marginRight="5dp"
+            android:padding="@dimen/text_margin_20dp"
+            android:background="@drawable/bg"
+            />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

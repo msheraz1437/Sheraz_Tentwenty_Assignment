@@ -1,0 +1,17 @@
+<resources>
+    <!-- App details -->
+    <string name="app_name">Ten Twenty App</string>
+
+    <!-- Content Description -->
+    <string name="news_image_desc">News Image</string>
+    <string name="movie_image">movie image</string>
+    <string name="str_test_date">22/02/2017</string>
+
+    <!-- Empty -->
+    <string name="no_news">No News</string>
+    <string name="book">Book</string>
+    <string name="watch">Watch Trailer</string>
+    <string name="genres">Genres</string>
+    <string name="overview">Overview</string>
+    <string name="dates">Date</string>
+</resources>
